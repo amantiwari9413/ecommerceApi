@@ -2,13 +2,13 @@ import productRoutes from './routes/productRouters.js'
 import userRoutes from './routes/userRouters.js'
 import bodyParser from 'body-parser';
 import app from './app.js';
-app.use("",()=>{
+app.use("/",(req,res)=>{
     res.send("api is runing...")
 })
 app.use(bodyParser.json());
 // all routes is define here
-app.use("",(res,req,next)=>{
-    res.send("Welcome to my API");
+app.use("",(req,res,next)=>{
+    req.send("Welcome to my API");
 })
 app.use('/api/product',productRoutes);
 app.use('/api/user',userRoutes);
