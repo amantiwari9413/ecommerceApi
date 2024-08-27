@@ -1,0 +1,27 @@
+{
+  "name": "online",
+  "version": "1.0.0",
+  "description": "this is learning website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "index.js"
+  },
+  "keywords": [
+    "online"
+  ],
+  "author": "aman tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
